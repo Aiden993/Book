@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore Pre-Selection Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="form-container">
+        <h2>Bookstore Pre-Selection Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="todayDate">Today's Date:</label>
+                <input type="date" id="todayDate" name="todayDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="childName">Child's Name:</label>
+                <input type="text" id="childName" name="childName" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+            </div>
+
+            <div class="form-group">
+                <label for="childBirthday">Child's Birthday:</label>
+                <input type="date" id="childBirthday" name="childBirthday" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parentName">Parent's Name:</label>
+                <input type="text" id="parentName" name="parentName" pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parentEmail">Parent's Email:</label>
+                <input type="email" id="parentEmail" name="parentEmail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address" required>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="approval" name="approval">
+                    I have signed approval form on file
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="bookSelection">Select a Book:</label>
+                <select id="bookSelection" name="bookSelection" required>
+                    <option value="catInTheHat">The Cat in the Hat</option>
+                    <option value="hopOnPop">Hop on Pop</option>
+                    <option value="harryPotter">Harry Potter and the Sorcerer's Stone</option>
+                    <option value="charlottesWeb">Charlotte's Web</option>
+                    <option value="goodnightMoon">Goodnight Moon</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Notes or Comments:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
